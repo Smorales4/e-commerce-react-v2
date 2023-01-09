@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-shop {
+        @apply py-2 px-4 bg-amber-400 text-white font-semibold rounded-full shadow-md hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-opacity-75;
+    }
+    .btn-features {
+        @apply py-2 px-4 bg-fuchsia-700 text-white font-semibold rounded-lg shadow-md hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-fuchsia-700 focus:ring-opacity-75;
+    }
+    .header {
+        @apply flex h-auto w-full items-center justify-end p-5 bg-white sticky top-0 left-0 shadow-2xl;
+    }
+    .header-text {
+        @apply text-xl font-semibold text-fuchsia-700 active:text-amber-400 hover:text-yellow-600 relative px-10;
+    }
+    .feature {
+        @apply grid grid-cols-5 gap-2 p-12 items-center place-content-evenly justify-center;
+    }
+    .feature-box {
+        @apply w-48 h-56 text-center rounded bg-white;
+    }
+    .feature-img {
+        @apply w-full mb-2;
+    }
+    .container{
+        @apply w-full flex flex-wrap items-center mt-8 flex-row-reverse;
+    }
+    .contact-box{
+        @apply bg-white py-10;
+    }
+    .contactflex{
+        @apply flex justify-start px-9;
+    }
+    .contact-size{
+        @apply w-full max-w-xl;
+    }   
+    .contact-h2{
+        @apply text-3xl font-bold text-center mb-6;
+    }   
+    .contact-p{
+        @apply text-center mb-8;
+    }   
+    .contact-flex2{
+        @apply flex flex-col items-center p-4 rounded-lg shadow-md;
+    }
+    .contact-icon{
+        @apply text-3xl text-fuchsia-700;
+    }
+    .contact-h3 {
+        @apply text-2xl font-bold mt-2;
+    }
+};
